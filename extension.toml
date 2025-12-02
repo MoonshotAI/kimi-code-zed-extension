@@ -1,0 +1,30 @@
+id = "Kimi-CLI"
+name = "Kimi CLI"
+version = "0.60"
+schema_version = 1
+authors = ["Moonshot AI"]
+description = "Kimi CLI as an ACP agent for Zed"
+repository = "https://github.com/MoonshotAI/kimi-cli"
+
+[agent_servers.kimi-cli]
+name = "Kimi CLI"
+
+[agent_servers.kimi-cli.targets.darwin-aarch64]
+archive = "https://github.com/MoonshotAI/kimi-cli/releases/download/0.60/kimi-0.60-aarch64-apple-darwin.tar.gz"
+cmd = "./kimi"
+args = ["--acp"]
+
+[agent_servers.kimi-cli.targets.darwin-x86_64]
+archive = "https://github.com/MoonshotAI/kimi-cli/releases/download/0.60/kimi-0.60-x86_64-apple-darwin.tar.gz"
+cmd = "./kimi"
+args = ["--acp"]
+
+[agent_servers.kimi-cli.targets.linux-x86_64]
+archive = "https://github.com/MoonshotAI/kimi-cli/releases/download/0.60/kimi-0.60-x86_64-unknown-linux-gnu.tar.gz"
+cmd = "./kimi"
+args = ["--acp"]
+
+[agent_servers.kimi-cli.targets.windows-x86_64]
+archive = "https://github.com/MoonshotAI/kimi-cli/releases/download/0.60/kimi-0.60-x86_64-pc-windows-msvc.zip"
+cmd = "./kimi.exe"
+args = ["--acp"]
