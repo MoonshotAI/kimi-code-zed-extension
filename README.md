@@ -1,0 +1,1 @@
+# Kimi CLI Zed Extension
